@@ -40,7 +40,7 @@ class EmployeeController extends Controller
         $employee->company_id = $companyId;
         $employee->save();
 
-        return redirect()->route('companies.show', $companyId)->with('success', 'Karyawan berhasil ditambahkan!');
+        return redirect()->route('company.show', $companyId)->with('success', 'Karyawan berhasil ditambahkan!');
     }
 
     /**

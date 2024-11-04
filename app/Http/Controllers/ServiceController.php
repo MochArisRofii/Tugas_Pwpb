@@ -39,7 +39,7 @@ class ServiceController extends Controller
         $service->company_id = $companyId;
         $service->save();
 
-        return redirect()->route('companies.show', $companyId)->with('success', 'Layanan berhasil ditambahkan!');
+        return redirect()->route('company.show', $companyId)->with('success', 'Layanan berhasil ditambahkan!');
     }
 
     /**
